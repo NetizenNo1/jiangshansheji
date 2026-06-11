@@ -1,0 +1,47 @@
+@font-face {font-family: 'xingkai';src: url(fonts/huawenxingkai.ttf);}
+@font-face {font-family: 'lishu';src: url(fonts/FZLSJ.OTF);}
+@font-face {font-family: '楷体';src: url(fonts/kaiti_GB2312.ttf);}
+#versions{width: 250px;height: 46px;bottom: 330px;line-height: 20px;left: 110px;color: #FFFFFF;position: absolute;font:15px "宋体";}
+#newGame,#gameStartButton,#continueGame,#gengxingsm,#tujian,#shurulujin{width: 200px;height: 46px;color: #EFEFF4;font:22px bolder;font-family: 'lishu';text-shadow: 1px 1px 1px #DD524D,-1px 1px 1px #DD524D;	cursor: pointer;}
+#creditsDes,#creditsDes2{width: 330px;height: 46px;color: #FFFFFF;position: absolute;text-shadow: 1px 2px 2px #000000;font: 18px "楷体";}
+#下一步{left: 30px;text-shadow: 2px 2px 2px #000000;color: #FFFFFF;font: 27px "楷体";}
+.titleSetText{height: 46px;color: #FFFFFF;font:16px "宋体";text-shadow: 1px 1px 1px #0000ff,-1px 1px 1px #0000ff;background: transparent;border:none;outline: none;position: absolute;word-wrap: break-word;overflow: hidden;text-align: center;}
+.属性{width: 250px;height: 1.2em;line-height: 20px;color: #FFFFFF;position: absolute;font:17px "宋体";text-shadow: 1px 3px 3px #000000;}
+.一级板{color: #FFFFFF;font:20px "楷体";text-shadow: 1px 2px 1px #000000,-1px 2px 1px #000000;}
+.住着谁{color: #FFFFFF;font:20px "楷体";text-shadow: 1px 2px 1px #000000,-1px 2px 1px #000000;position: absolute;font-size: 16px;text-align: center;height: 18px;width: 224px;}
+.二级板,{color: #FFFFFF;font:15px "微软雅黑";text-shadow: 1px 3px 3px #000000;}
+.ziButtonText{color: #FFFFFF;font:26px "xingkai";text-shadow: 1px 1px 1px #000000;}
+#dfTitle{color: #FFFFFF;font:65px "xingkai";color: #000000;width: 24px;top: 100px;left: 30px;position: absolute;text-shadow: -1px 1px 1px #ffffff,1px 1px 1px #ffffff;;}
+.继续{color: #FFFFFF;font:19px "宋体";text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000;text-align: center;}
+.textsong,.mfsm,.jpsm{color: #FFFFFF;height: 1.2em;word-wrap: break-word;overflow: hidden;font:15px "宋体";text-align: center;position: relative;cursor: pointer;}
+.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.f1,.f2,.f3,.f4,.f5,.f6,.f7,.f8,.f9,.f10,.k1,.k2,.k3,.k4,.k5,.k6,.k7,.w1,.w2,.w3,.w4,.w5,.w6,.w7,.w8,.j1,.j2,.j3,.j4,.j5,.j6,.j7,.j8,.j9,.z1,.z2,.z3,.z4,.z5,.z6,.z7,.z8,.z9,.z10,.z11,.z12,.jj1,.jj2,.jj3,.jj4,.jj5,.jj6,.jj7{
+	color: #FFFFFF;height: 1.2em;width: 25px;word-wrap: break-word;font:15px "宋体";top: 7px;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000;text-align: center;position: relative;overflow: hidden;float: left;
+}
+.cityText{text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;color: #71e200;font: 18px "楷体";position: relative;top: 36px;width: 80px;height: 20px;word-wrap: break-word;text-align: center;position: relative;overflow: hidden;float: left;left: -12px;}
+.song{color: #FFFFFF;word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;}
+.song2{color: #FFFFFF;width: 10em;height: 1.2em; word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;}
+.juqing{color: #FFFFFF;width: 16em;height: 1.2em;left: 42px; word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;text-align: left;position: absolute;}
+.zhuyaorw{left: 365px;color: #FFFFFF;width: 16em;height: 1.2em; word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;text-align: left;position: absolute;}
+.dacheng{left: 665px;color: #55aaff;width: 3em;height: 1.2em; word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;text-align: center;position: absolute;}
+.状态{color: #FFFFFF;word-wrap: break-word;overflow: hidden;font:12px "宋体";position: absolute;text-align: center;height: 18px;width: 224px;}
+#jishitext{color: #000000;width: 700px;height: 340px;top: 80px;left: 50px;word-wrap: break-word;font:15px "宋体";position: absolute;overflow-x: hidden;overflow-y: scroll;background-color: rgba(255,255,255,0.5);}
+.mfsm,.jpsm{position: absolute;color: #000000;width: 10em;text-align: left;font-size: 14px;}
+.songTitle,.jzmc,.cysl,.ycsl{color: #FFFFFF;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000;width: 4em;height: 20px;word-wrap: break-word;overflow: hidden;font:18px "宋体";text-align: center;position: absolute;}
+#输入封号,#输入{position: absolute;width: 5em;height: 1em;color: #FFFFFF;font:16px "宋体";text-shadow: 1px 1px 1px #fe0000;background: transparent;border:none;outline: none;top: 176px;left: 358px;text-align: center;overflow: hidden;}
+.宫殿名称{position: absolute;left: 10px;top:20px;color: #FFFFFF;width: 100px;height: 1.2em;text-align: center;font:20px "楷体";text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;word-wrap: break-word;overflow: hidden;}
+#ycts{width: 400px; top: 100px;left: 200px;position: absolute;font-size: 24px;color: #000000;font:16px '宋体';text-align: center;}
+.dabiaoti,#xfsm,#bssm,#jgsm,#jqsm{color: #FFFFFF;font:20px "楷体";text-shadow: 1px 2px 1px #000000,-1px 2px 1px #000000;width: 300px;top: 45px;left: 250px;position: absolute;font-size: 24px;text-align: center;}
+#zhixingren,#zhixingren2,#wr0,#wr1,#wr2,#wr3,#wr4,#wr5,#wr6{top: 88px;left:250px;color:black;width: 240px;height: 18px;text-align: center;}
+#圣旨文本{top: 70px;left: 140px;width: 320px;height: 235px; position: absolute;font-family: '宋体';writing-mode: tb-rl;word-wrap: break-word;text-indent: 2em;letter-spacing: 4px;}
+.renanmz{font:26px "xingkai";text-shadow: 2px 1px 1px #000000,-2px 1px 1px #000000;color: #ffffff;width: 26px;position: absolute;}
+#gongty{left: 190px;bottom: 72px;width: 10em;height: 1.2em;text-align: left;color: #FFFFFF;word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;}
+.textwp{color: #FFFFFF;height: 1.5em;width: 3em; word-wrap: break-word;overflow: hidden;font:16px "宋体";text-align: center;position: absolute;cursor: pointer;top: 57px;}
+#wpmz{color: #FFFFFF;height: 1.2em;width: 8em; word-wrap: break-word;font:16px "宋体";text-align: center;position: absolute;cursor: pointer;top: 247px;left: 80px;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000}
+#wpsm{color: #FFFFFF;height: 6.8em;width: 6em;overflow: hidden;word-wrap: break-word;font:16px "宋体";position: absolute;cursor: pointer;top: 275px;left: 80px;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000}
+.jzsm{top: 65px;left: 180px;position:absolute;color: #000000;width: 12em; height: 5em;word-wrap: break-word;overflow: hidden;font:16px "宋体";position: absolute;cursor: pointer;}
+.ld{position:absolute;color: #000000;width: 2em; height: 1.2em;font:18px "宋体";}
+.jctext{word-wrap: break-word;font:16px "宋体";position: absolute;color:black;width: 620px;height: 1.2em;overflow: hidden;}
+#szbText{word-wrap: break-word;font:16px "宋体";position: absolute;top: 50px;left:80px;color:black;width: 640px;height: 380px;overflow: scroll;}
+#yundaole{color: white;writing-mode: tb-rl;font: 30px "xingkai";position: absolute;top: 100px;left: 380px;width: 1em;height: 10em;animation: ydl 1s infinite;}
+#jiejutext{color: #000000;width: 600px;height: 370px;top: 60px;left: 20px;word-wrap: break-word;overflow-y: hidden;font:15px "宋体";position: absolute;overflow-x: hidden;overflow-y: scroll;background-color: rgba(255,255,255,0.4);}
+.sxmc{position: absolute;color: #FFFFFF;text-align: center;font:22px "楷体";text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;word-wrap: break-word;overflow: hidden;height: 1.2em;width: 2em;}
