@@ -44,4 +44,27 @@
 #szbText{word-wrap: break-word;font:16px "宋体";position: absolute;top: 50px;left:80px;color:black;width: 640px;height: 380px;overflow: scroll;}
 #yundaole{color: white;writing-mode: tb-rl;font: 30px "xingkai";position: absolute;top: 100px;left: 380px;width: 1em;height: 10em;animation: ydl 1s infinite;}
 #jiejutext{color: #000000;width: 600px;height: 370px;top: 60px;left: 20px;word-wrap: break-word;overflow-y: hidden;font:15px "宋体";position: absolute;overflow-x: hidden;overflow-y: scroll;background-color: rgba(255,255,255,0.4);}
+
+/* 固定横屏样式 - 自动旋转内容 */
+@media (orientation: portrait) {
+	body {
+		transform: rotate(90deg);
+		transform-origin: left top;
+		width: 100vh;
+		height: 100vw;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+	
+	#game {
+		transform: scale(min(100vh/480, 100vw/800));
+	}
+}
+
+@media (orientation: landscape) {
+	#game {
+		transform: scale(min(100vw/800, 100vh/480));
+	}
+}
 .sxmc{position: absolute;color: #FFFFFF;text-align: center;font:22px "楷体";text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;word-wrap: break-word;overflow: hidden;height: 1.2em;width: 2em;}
