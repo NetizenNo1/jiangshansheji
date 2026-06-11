@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>江山社稷</title>
+		<link rel="stylesheet" type="text/css" href="stylepc.css"/>
+		<link rel="stylesheet" href="sprite.css" type="text/css"/>
+		<link rel="stylesheet" href="textstyle.css" type="text/css"/>
+		<script src="js/rwsj.js"></script>
+		<script src="js/sywp.js"></script>
+		<script src="js/qitasj.js"></script>
+		<script src="js/file_1.js"></script>
+		<script src="js/new_file1.js"></script>
+		<script src="js/meiyuehg.js"></script>
+		<script src="js/huangdi.js"></script>
+	</head>
+	<body style="width: 100vw;height: 100vh;overflow: hidden;margin: 0;padding: 0;background: #000;display: flex;justify-content: center;align-items: center;">
+		<div id="game" style="width: 800px;height: 480px;transform-origin: center center;">
+			<div id="皇宫">
+				<div id="hgdt">
+					<img src="asgPic_DCWindow/1.webp" alt="" id="皇宫背景">
+					<button id="宣政殿" class="yellowButton2" type="button" style="position: absolute;top: 300px;left: 329px;">宣政殿</button>
+					<button id="丹凤门" class="yellowButton2" type="button" style="position: absolute;top: 430px;left: 329px;">丹凤门</button>
+					<button id="紫宸殿" class="yellowButton2" type="button" style="position: absolute;top: 200px;left: 329px;">紫宸殿</button>
+					<button id="甘露殿" class="yellowButton2" type="button" style="position: absolute;top: 190px;left: 520px;">甘露殿</button>
+					<button id="椒房殿" class="yellowButton2" type="button" style="position: absolute;top: 50px;left: 329px;">椒房殿</button>
+					<button id="后宫" class="yellowButton2" type="button" style="position: absolute;top: 278px;left: 10px;">后宫</button>
+					<button id="慈宁宫" class="yellowButton2" type="button" style="position: absolute;top: 278px;left: 150px;">慈宁宫</button>
+					<button id="寿康宫" class="yellowButton2" type="button" style="position: absolute;top: 278px;left: 670px;">寿康宫</button>
+					<button id="御书房" class="yellowButton2" type="button" style="position: absolute;top: 278px;left: 520px;">御书房</button>
+					<button id="百工坊" class="yellowButton2" type="button" style="position: absolute;top: 235px;left: 580px;">百工坊</button>
+					<button id="琴淑阁" class="yellowButton2" type="button" style="position: absolute;top: 190px;left: 10px;">琴淑阁</button>
+					<button id="武英馆" class="yellowButton2" type="button" style="position: absolute;top: 190px;left: 150px;">武英馆</button>
+					<button id="宝华殿" class="yellowButton2" type="button" style="position: absolute;top: 400px;left: 10px;">宝华殿</button>
+					<button id="青炉房" class="yellowButton2" type="button" style="position: absolute;top: 190px;left: 670px;">青炉房</button>
+					<button id="太医院" class="yellowButton2" type="button" style="position: absolute;top: 338px;left: 650px;">太医院</button>
+					<button id="礼明殿" class="yellowButton2" type="button" style="position: absolute;top: 400px;left: 650px;">礼明殿</button>
+					<button id="御花园" class="yellowButton2" type="button" style="position: absolute;top: 120px;left: 500px;">御花园</button>
+					<button id="内务府" class="yellowButton2" type="button" style="position: absolute;top: 338px;left: 10px;">内务府</button>
+					<button id="掖庭" class="yellowButton2" type="button" style="position: absolute;top: 100px;left: 20px;">掖庭宫</button>
+					<button id="储秀阁" class="yellowButton2" type="button" style="position: absolute;top: 140px;left: 120px;">储秀阁</button>
+				</div>
+				<div id="zouzhe" class="xIcon1" style="left: 3px;bottom: 2px;width:242px; height:31px; background-position:0px -80px;display: none;">
+					<div id="dfzouzhe" class="xIcon1"></div>
+					<div id="gyzouzhe" class="xIcon1"></div>
+					<div id="jszouzhe" class="xIcon1"></div>
+					<div id="gbzouzhe" class="xIcon"></div>
+					</div>
+				<div id="taijianSh" class="各地内部">
+					<div class="yilanbiao" id="tjShBG" style="top: 0px;left: 0px;"></div>
+					<div id="taijianShb" class="cxhg" >
+						<span class="song" id="taijianText" style="top: 10px;left: 15px;width: 360px;"></span></div>
+					<div id="taijian"></div>
+					<button id="taijianCon" class="redButton2" style="top: 330px;left: 340px;">继续</button>
+					<div id="taijianCho" style="display:none;"><button id="taijianan0" type="button" class="redButton2" style="top: 330px;left: 240px;"></button>
+						<button id="taijianan1" type="button" class="redButton2" style="top: 330px;left: 440px;"></button>
+					</div>
+				</div>
+					<div id="taijianBg" class="各地内部">
+						<img src="" id="皇宫背景2" style="filter: blur(5px);">
+						<div id="tjjj" style="position:absolute">
+							<div id="taijianBgb" class="cxhg" >
+								<span class="song" id="taijianbgText" style="top: 10px;left: 15px;width: 360px;"></span></div>
+							<div id="taijiantu" style="display: none;"><img src="" alt="" id="太监报告事情图" ><img src="images/1169.webp" alt="" style="left: 155px;position: absolute;top: 0px;"></div>
+							<div id="taijian2"></div>
+							<button id="tjBgCon" type="button" class="redButton2" style="top: 330px;left: 330px;">继续</button>
+							<div id="tjBgCho" style="display:none;">
+								<button id="tjBgan0" type="button" class="redButton2" style="top: 330px;left: 250px;"></button>
+							    <button id="tjBgan1" type="button" class="redButton2" style="top: 330px;left: 410px;"></button>
+							</div>
+						</div>
+					</div>
+					<div id="jieju" class="各地内部">
+						<img src="images/529.webp" alt="">
+						<span id="jiejutext"></span>
+						<button class="redButton2" id="jiejan0" type="button"style="top: 60px;left: 635px;">大事笔录</button>
+						<button class="redButton2" id="jiejan1" type="button"style="top: 100px;left: 635px;">嫔妃列表</button>
+						<button class="redButton2" id="jiejan2" type="button"style="top: 140px;left: 635px;">子女列表</button>
+						<button class="redButton2" id="jiejan3" type="button"style="top: 180px;left: 635px;">皇孙列表</button>
+						<button class="redButton2" id="jiejan4" type="button"style="top: 220px;left: 635px;">全国一览</button>
+					</div>
+					<div id="jingcheng" class="各地内部">
+						<img src="" id="jcBG" alt="">
+						<button class="redButton2" id="jcan0" type="button"style="top: 90px;left: 635px;">听听风评</button>
+						<button class="redButton2" id="jcan1" type="button"style="top: 130px;left: 635px;">侯爵府</button>
+						<button class="redButton2" id="jcan2" type="button"style="top: 170px;left: 635px;">街边小摊</button>
+						<button class="redButton2" id="jcan3" type="button"style="top: 210px;left: 635px;">灵山</button>
+						<button class="redButton2" id="jcan4" type="button"style="top: 250px;left: 635px;">梨花园</button>
+						<button class="redButton2" id="jcan5" type="button"style="top: 290px;left: 635px;">群玉院</button>
+						<button class="redButton2" id="jcan6" type="button"style="top: 330px;left: 635px;">奇兰茶馆</button>
+						<button class="redButton2" id="jcan7" type="button"style="top: 370px;left: 635px;">鸿宾楼</button>
+						<button class="yellowButton2" id="回宫" type="button"style="top: 420px;left: 635px;font-family: 宋体;">回宫</button>
+						<div id="jckuang" class="cxhg"><span class="song" id="jcText"></span></div>
+					</div>
+					<div id="chaguan" class="各地内部">
+					<img id="chaguanBG" alt="">
+						<button class="redButton2" id="算命先生" type="button"style="top: 130px;left: 635px;">算命先生</button>
+						<button class="redButton2" id="和尚" type="button"style="top: 170px;left: 635px;">和尚</button>
+						<button class="redButton2" id="江湖郎中" type="button"style="top: 210px;left: 635px;">江湖郎中</button>
+						<button class="redButton2" id="武林人士" type="button"style="top: 250px;left: 635px;">武林人士</button>
+						<button class="redButton2" id="落魄书生" type="button"style="top: 290px;left: 635px;">落魄书生</button>
+						<button class="redButton2" id="失明琴师" type="button"style="top: 330px;left: 635px;">失明琴师</button>
+						<button class="yellowButton2" id="lkcg" type="button"style="top: 420px;left: 635px;font-family: 宋体;">离开</button>
+						<div id="cgkuang" class="cxhg"><span class="song" id="cgText"></span></div>
+					</div>
+					<div id="宣政殿内" class="各地内部">
+					    <img id="宣政殿BG" alt="">
+						<div><img src="./images/334.webp" alt="" style="bottom: -35px;position: absolute;"></div>
+						<div id="zunzhi"><span id="zunzhitext"></span></div>
+						<div id="wenhao1"></div>
+						<button id="退朝" class="ziButton" type="button" style="bottom: 10px;left: 650px;">退朝</button>
+						<button id="吏部" class="yellowButton2" type="button" style="top: 110px;left: 30px;">吏部</button>
+						<button id="户部" class="yellowButton2" type="button" style="top: 150px;left: 30px;">户部</button>
+						<button id="礼部" class="yellowButton2" type="button" style="top: 190px;left: 30px;">礼部</button>
+						<button id="兵部" class="yellowButton2" type="button" style="top: 230px;left: 30px;">兵部</button>
+						<button id="刑部" class="yellowButton2" type="button" style="top: 270px;left: 30px;">刑部</button>
+						<button id="工部" class="yellowButton2" type="button" style="top: 310px;left: 30px;">工部</button>
+						<button id="地方发展" class="redButton2" type="button" style="top: 370px;left: 30px;font-family: lishu;">地方发展</button>
+						<button id="世界地图" class="blueButton2" type="button" style="top: 170px;left: 630px;">世界地图</button>
+						<button id="人才表" class="blueButton2" type="button" style="top: 205px;left: 630px;">人才表</button>
+						<button id="收支表" class="blueButton2" type="button" style="top: 240px;left: 630px;">收支表</button>
+						<button id="军事表" class="blueButton2" type="button" style="top: 275px;left: 630px;">军事表</button>
+						<button id="外交表" class="blueButton2" type="button" style="top: 310px;left: 630px;">外交表</button>
+						<div id="吏部板" style="display: none;">
+							<button id="开科考试" class="yellowButton3" type="button"style="top: 112px;left: 185px;">开科考试</button>
+							<button id="调换官员" class="yellowButton3" type="button"style="top: 142px;left: 185px;">调换官员</button>
+							<button id="封爵" class="yellowButton3" type="button"style="top: 172px;left: 185px;">封爵</button>
+							<button id="辞退官员" class="yellowButton3" type="button"style="top: 202px;left: 185px;">辞退官员</button>
+							<button id="劝诱人才" class="yellowButton3" type="button"style="top: 232px;left: 185px;">劝诱人才</button>
+							<button id="吏部取消" class="yellowButton3" type="button"style="top: 262px;left: 185px;">取消</button>
+						</div>
+					    <div id="户部板" style="display: none;">
+					    	<button id="征收钱粮" class="yellowButton3" type="button"style="top: 152px;left: 185px;">征收钱粮</button>
+					    	<button id="武器购买" class="yellowButton3" type="button"style="top: 182px;left: 185px;">武器购买</button>
+					    	<button id="下发补助" class="yellowButton3" type="button"style="top: 212px;left: 185px;">下发补助</button>
+					    	<button id="犒赏军队" class="yellowButton3" type="button"style="top: 242px;left: 185px;">犒赏军队</button>
+					    	<button id="移民" class="yellowButton3" type="button"style="top: 272px;left: 185px;">移民</button>
+					    	<button id="粮食交易" class="yellowButton3" type="button"style="top: 302px;left: 185px;">粮食交易</button>
+							<button id="户部取消" class="yellowButton3" type="button"style="top: 332px;left: 185px;">取消</button>
+					    </div>
+						<div id="礼部板" style="display: none;">
+							<button id="易储" class="yellowButton3" type="button"style="top: 152px;left: 185px;">易储</button>
+							<button id="外交" class="yellowButton3" type="button"style="top: 182px;left: 185px;">外交</button>
+							<button id="贸易" class="yellowButton3" type="button"style="top: 212px;left: 185px;">贸易</button>
+							<button id="联姻" class="yellowButton3" type="button"style="top: 242px;left: 185px;">联姻</button>
+							<button id="祭祀" class="yellowButton3" type="button"style="top: 272px;left: 185px;">祭祀</button>
+							<button id="礼部取消" class="yellowButton3" type="button"style="top: 302px;left: 185px;">取消</button>
+						</div>
+						<div id="兵部板" style="display: none;">
+							<button id="训练" class="yellowButton3" type="button"style="top: 222px;left: 185px;">
+								<span class="二级板">训练</span>
+							</button>
+							<button id="编队" class="yellowButton3" type="button"style="top: 252px;left: 185px;">
+								<span class="二级板">编队</span>
+							</button>
+							<button id="发动战争" class="yellowButton3" type="button"style="top: 282px;left: 185px;">
+								<span class="二级板">发动战争</span>
+							</button>
+							<button id="征兵" class="yellowButton3" type="button"style="top: 312px;left: 185px;">
+								<span class="二级板">征兵</span>
+							</button>
+							<button id="解甲归田" class="yellowButton3" type="button"style="top: 342px;left: 185px;">
+								<span class="二级板">解甲归田</span>
+							</button>
+							<button id="兵部取消" class="yellowButton3" type="button"style="top: 372px;left: 185px;">
+								<span class="二级板">取消</span>
+							</button>
+						</div>
+						<div id="刑部板" style="display: none;">
+							<button id="缉拿贪官" class="yellowButton3" type="button"style="top: 252px;left: 185px;">
+								<span class="二级板">缉拿贪官</span>
+							</button>
+							<button id="缉拿反贼" class="yellowButton3" type="button"style="top: 282px;left: 185px;">
+								<span class="二级板">缉拿反贼</span>
+							</button>
+							<button id="处理罪臣" class="yellowButton3" type="button"style="top: 312px;left: 185px;">
+								<span class="二级板">处理罪臣</span>
+							</button>
+							<button id="刑部取消" class="yellowButton3" type="button"style="top: 342px;left: 185px;">
+								<span class="二级板">取消</span>
+							</button>
+						</div>
+						<div id="工部板" style="display: none;">
+							<button id="特殊建筑" class="yellowButton3" type="button"style="top: 282px;left: 185px;">
+								<span class="二级板">特殊建筑</span>
+							</button>
+							<button id="招揽民夫" class="yellowButton3" type="button"style="top: 312px;left: 185px;">
+								<span class="二级板">招揽民夫</span>
+							</button>
+							<button id="解雇民夫" class="yellowButton3" type="button"style="top: 342px;left: 185px;">
+								<span class="二级板">解雇民夫</span>
+							</button>
+							<button id="建设行宫" class="yellowButton3" type="button"style="top: 372px;left: 185px;">
+								<span class="二级板">建设行宫</span>
+							</button>
+							<button id="工部取消" class="yellowButton3" type="button"style="top: 402px;left: 185px;">
+								<span class="二级板">取消</span>
+							</button>
+						</div>
+					</div>
+					<div id="map">
+						<div id="citys" style="top: 0px;"></div>
+						<div class="shuxinlan" style="width:801px; height:74px; background-position:0px -107px;bottom: -35px;transform: rotate(180deg);"></div>
+						<div id="cityshang" class="xIcon" style="top: 30px;left: 390px;width:30px; height:54px; background-position:-545px 0px;transform: rotate(90deg);"></div>
+						<div id="cityxia" class="xIcon" style="bottom: 30px;left: 390px;width:40px; height:54px; background-position:-545px 0px;transform: rotate(270deg);"></div>
+						<div id="cityzuo" class="xIcon" style="top: 200px;left: 0px;width:40px; height:54px; background-position:-545px 0px;"></div>
+						<div id="cityyou" class="xIcon" style="top: 200px;left: 760px;width:40px; height:54px; background-position:-545px 0px;transform: rotate(180deg);"></div>
+						<div id="mapxx" style="display: none;">
+							<img id="cityxxbg" src="">
+							<span id="cityxx" class="song" style="top: 150px;left: 270px; width: 250px;height: 180px;text-shadow: 1px 1px 1px #000000;"></span>
+							<img src="images/33.webp" style="top: 100px;left: 210px;position: absolute;">
+						    <div id="cityxxgb" class="xIcon" style="top: 115px;left: 530px;width:36px; height:36px; background-position:-487px -87px;"></div>
+						</div>
+						<button id="mapgb" class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="紫宸殿内" class="各地内部">
+					    <img id="紫宸殿BG" alt="">
+						<div class="yilTittle"style="font-size: 32px;">紫宸殿</div>
+						<button id="离开紫宸殿" class="ziButton" type="button" style="bottom: 10px;left: 650px;">离开</button>
+						<button id="记录册" class="yellowButton2" type="button" style="top: 170px;left: 50px;">记录册</button>
+						<button id="宫内调配" class="yellowButton2" type="button" style="top: 215px;left: 50px;">宫内调配</button>
+						<button id="其他活动" class="yellowButton2" type="button" style="top: 260px;left: 50px;">其他活动</button>
+						<button id="游戏相关" class="yellowButton2" type="button" style="top: 305px;left: 50px;">游戏相关</button>
+						<div id="记录册板" style="display: none;">
+							<button id="妃嫔一览" class="yellowButton3" type="button"style="top: 170px;left: 200px;">妃嫔一览</button>
+							<button id="子女一览" class="yellowButton3" type="button"style="top: 200px;left: 200px;">子女一览</button>
+							<button id="开销一览" class="yellowButton3" type="button"style="top: 230px;left: 200px;">开销一览</button>
+							<button id="宫人一览" class="yellowButton3" type="button"style="top: 260px;left: 200px;">宫人一览</button>
+							<button id="皇孙一览" class="yellowButton3" type="button"style="top: 290px;left: 200px;">皇孙一览</button>
+							<button id="大事笔记" class="yellowButton3" type="button"style="top: 320px;left: 200px;">大事笔记</button>
+						</div>
+						<div id="宫内调配板" style="display: none;">
+							<button id="调配宫人" class="yellowButton3" type="button"style="top: 215px;left: 200px;">调配宫人</button>
+							<button id="宫殿迁移" class="yellowButton3" type="button"style="top: 245px;left: 200px;">宫殿迁移</button>
+							<button id="奇珍异宝" class="yellowButton3" type="button"style="top: 275px;left: 200px;">奇珍异宝</button>
+							<button id="自定位分" class="yellowButton3" type="button"style="top: 305px;left: 200px;">自定位分</button>
+						</div>
+						<div id="其他活动板" style="display: none;">
+							<button id="召见王爷" class="yellowButton3" type="button"style="top: 260px;left: 200px;">召见王爷</button>
+							<button id="后山狩猎" class="yellowButton3" type="button"style="top: 290px;left: 200px;">后山狩猎</button>
+							<button id="浩荡出巡" class="yellowButton3" type="button"style="top: 320px;left: 200px;">浩荡出巡</button>
+							<button id="宴请大臣" class="yellowButton3" type="button"style="top: 350px;left: 200px;">宴请大臣</button>
+						</div>
+						<div id="游戏相关板" style="display: none;">
+							<button id="存档" class="yellowButton3" type="button"style="top: 305px;left: 200px;">存档</button>
+							<button id="读档" class="yellowButton3" type="button"style="top: 335px;left: 200px;">读档</button>
+							<button id="剧情总览" class="yellowButton3" type="button"style="top: 365px;left: 200px;">剧情总览</button>
+							<button id="禅让" class="yellowButton3" type="button"style="top: 395px;left: 200px;">禅让</button>
+						</div>	
+					</div>
+					<div id="jqzl" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<span class="dabiaoti">剧情总览</span>
+						<img src="images/2199.webp" class="juqingb" style="top: 80px;left: 25px;position: absolute;">
+						<img src="images/2199.webp" class="juqingb" style="top: 140px;left: 25px;position: absolute;">
+						<img src="images/2199.webp" class="juqingb" style="top: 200px;left: 25px;position: absolute;">
+						<img src="images/2199.webp" class="juqingb" style="top: 260px;left: 25px;position: absolute;">
+						<img src="images/2199.webp" class="juqingb" style="top: 320px;left: 25px;position: absolute;">
+						<img src="images/2199.webp" class="juqingb" style="top: 380px;left: 25px;position: absolute;">
+						<span class="juqing"style="top: 97px;"></span>
+						<span class="juqing"style="top: 157px;"></span>
+						<span class="juqing"style="top: 217px;"></span>
+						<span class="juqing"style="top: 277px;"></span>
+						<span class="juqing"style="top: 337px;"></span>
+						<span class="juqing"style="top: 397px;"></span>
+						<span class="zhuyaorw"style="top: 97px;"></span>
+						<span class="zhuyaorw"style="top: 157px;"></span>
+						<span class="zhuyaorw"style="top: 217px;"></span>
+						<span class="zhuyaorw"style="top: 277px;"></span>
+						<span class="zhuyaorw"style="top: 337px;"></span>
+						<span class="zhuyaorw"style="top: 397px;"></span>
+						<span class="dacheng"style="top: 97px;"></span>
+						<span class="dacheng"style="top: 157px;"></span>
+						<span class="dacheng"style="top: 217px;"></span>
+						<span class="dacheng"style="top: 277px;"></span>
+						<span class="dacheng"style="top: 337px;"></span>
+						<span class="dacheng"style="top: 397px;"></span>
+						<div class="yilanbiao" id="juqinqian"></div>
+						<div class="yilanbiao" id="juqinhou"></div>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="qita" class="各地内部">
+						<img src="" id="qitaBG" alt="">
+						<div class="yilTittle"id="qitaTittle" style="font-size: 32px;"></div>
+						<div id="taiyiyuan" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 80px;left: 110px;">
+							<span class="renanmz" style="top: 90px;left: 125px;">王耀辰</span>
+							<img src="images/1464.webp"id="wangyaoc" style="position: absolute;top: 120px;left: 140px;cursor: pointer;">
+						</div>
+						<div id="yushufang" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 70px;left: 110px;">
+							<span class="renanmz" style="top: 80px;left: 125px;">曹夙峰</span>
+							<img src="images/759.webp"id="caosuf" style="position: absolute;top: 90px;left: 130px;cursor: pointer;">
+						</div>
+						<div id="wuyingguan" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 70px;left: 110px;">
+							<span class="renanmz" style="top: 80px;left: 125px;">红星寿</span>
+							<img src="images/782.webp"id="hongxings" style="position: absolute;top: 50px;left: 120px;cursor: pointer;">
+						</div>
+						<div id="shaofujian" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 70px;left: 110px;">
+							<span class="renanmz" style="top: 80px;left: 115px;">谢衣</span>
+							<img src="images/773.webp"id="xieyi" style="position: absolute;top: 90px;left: 120px;cursor: pointer;">
+						</div>
+						<div id="qinshuge" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 70px;right: 100px;">
+							<span class="renanmz" style="top: 80px;right: 115px;">苏茉尔</span>
+							<img src="images/745.webp"id="sumoer" style="position: absolute;top: 90px;right: 110px;cursor: pointer;">
+						</div>
+						<div id="qinglufang" style="display: none;">
+						    <img src="images/747.webp" style="position: absolute;top: 60px;left: 80px;">
+							<span class="renanmz" style="top: 70px;left: 95px;">紫殷</span>
+							<img src="images/1479.webp"id="ziyin" style="position: absolute;top: 70px;left: 100px;cursor: pointer;">
+						</div>
+						<button class="ziButton" id="qitalikai" type="button" style="bottom: 10px;left: 660px;">离开</button>
+					</div>
+					<div id="liandan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<img src="images/1932.webp" style="position: absolute;top: 65px;left: 45px;">
+						<span id="土" class="ld" style="top: 50px;left: 212px;text-shadow: 1px 1px 1px #ca5b00,-1px 1px 1px #ca5b00;">0</span>
+						<span id="风" class="ld" style="top: 100px;left: 345px;text-shadow: 1px 1px 1px #a9f4ef,-1px 1px 1px #a9f4ef;">0</span>
+						<span id="暗" class="ld" style="top: 227px;left: 398px;text-shadow: 1px 1px 1px #5e7475,-1px 1px 1px #5e7475;">0</span>
+						<span id="水" class="ld" style="top: 345px;left: 345px;text-shadow: 1px 1px 1px #00ffff,-1px 1px 1px #00ffff;">0</span>
+						<span id="木" class="ld" style="top: 410px;left: 212px;text-shadow: 1px 1px 1px #00aa00,-1px 1px 1px #00aa00;">0</span>
+						<span id="雷" class="ld" style="top: 345px;left: 75px;text-shadow: 1px 1px 1px #9500df,-1px 1px 1px #9500df;">0</span>
+						<span id="光" class="ld" style="top: 227px;left: 30px;text-shadow: 1px 1px 1px #ffff00,-1px 1px 1px #ffff00;">0</span>
+						<span id="火" class="ld" style="top: 100px;left: 75px;text-shadow: 1px 1px 1px #aa0000,-1px 1px 1px #aa0000;">0</span>
+						<img src="images/2233.webp" id="lddh" style="display: none;position: absolute;top: 55px;left: 35px;width: 360px;height: 360px;">
+						<div id="ycb"></div>
+						<button type="button" class="redButton2 " id="lianzhi" style=" bottom: 5px;left: 360px;border: none;">炼制</button>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 670px;">关闭</button>
+					</div>
+					<div id="chengyao" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 670px;">离开</button>
+					</div>
+					<div id="wupin" class="各地内部">
+						<img src="./images/315.webp" alt="">
+						<img src="./images/316.webp" id="wupinban" alt="">
+						<div id="linew"></div>
+						<div class="textwp" id="全部" style="left: 132px;">全部</div>
+						<div class="textwp" id="衣物" style="left: 192px;">衣物</div>
+						<div class="textwp" id="珠宝" style="left: 252px;">珠宝</div>
+						<div class="textwp" id="食品" style="left: 310px;">食品</div>
+						<div class="textwp" id="家具" style="left: 368px;">家具</div>
+						<div class="textwp" id="文玩" style="left: 426px;">文玩</div>
+						<div class="textwp" id="武器" style="left: 485px;">武器</div>
+						<div class="textwp" id="书籍" style="left: 543px;">书籍</div>
+						<div class="textwp" id="花草" style="left: 602px;">花草</div>
+						<div class="textwp" id="毒药" style="left: 657px;">毒药</div>
+						<div id="wpxx" style="display: none">
+							<img src="" id="wpIcon" style="top: 128px;left: 50px;position: absolute;">
+							<span id="wpmz"></span>
+							<span id="wpsm"></span>
+							<button id="wpan0" class="yellowButton3" type="button" style="top: 102px;left: 145px;font-family: 宋体;">送给大臣</button>
+							<button id="wpan1" class="yellowButton3" type="button" style="top: 133px;left: 145px;font-family: 宋体;">送给妃子</button>
+							<button id="wpan2" class="yellowButton3" type="button" style="top: 168px;left: 145px;font-family: 宋体;">送给子女</button>
+							<button id="wpan3" class="yellowButton3" type="button" style="top: 203px;left: 145px;font-family: 宋体;">贱价处理</button>
+						</div>
+						<button id="批量处理" class="yellowButton2" type="button" style="bottom: 57px;left: 80px;font-family: 宋体;">批量处理</button>
+						<div id="wupinb"></div>
+						<div class="yilTittle" id="wpTittle">物品列表</div>
+						<div class="yilanbiao" id="wupinqian"></div>
+						<div class="yilanbiao" id="wupinhou"></div>
+						<button class="ziButton" id="wupingb" type="button" style="bottom: 10px;left: 670px;">离开</button>
+					</div>	
+					<div id="礼明殿面板" class="各地内部">
+						<img src="./images/1488.webp" alt="">
+						<img id="shizhe1" src="./images/1494.webp" alt="">
+						<img id="shizhe0" src="./images/1509.webp" alt="">
+						<img src="./images/1967.webp" alt="" style="top: 60px;left: 85px;position: absolute;">
+						<span id="lmddh" class="song"></span>
+						<button id="lmdan1" class="yellowButton2" type="button" style="bottom: 70px;right: 50px;font-family: 宋体;"></button>
+						<button id="lmdan0" class="redButton2" type="button" style="bottom: 70px;right: 200px;"></button>
+						<button id="lmdgb" class="ziButton" type="button" style="bottom: 10px;left: 670px;">离开</button>
+					</div>
+					<div id="neishiMB" class="各地内部">
+					    <img id="neishiBG" src="" alt=""> 
+			        	<div id="neishiBan" style="position: absolute;width: 800px;height: 480px;top: 0px;left: 0px;background-color: rgba(0, 0, 0, 0.4)"></div>
+						 <img src="images/1001.webp" style="top: 50px;left: 240px;position: absolute;">
+						 <span id="neishiTitle" class="songTitle" style="top: 60px;left: 380px;"></span>
+						 <span class="song" id="neishiText" style="top: 100px;left: 260px;width: 317px;height: 230px;"></span>
+						 <button id="nsan0" class="yellowButton2" type="button"style="top: 290px;left: 140px;font-family: 宋体;"></button>
+						 <button id="nsan1" class="yellowButton2" type="button"style="top: 290px;left: 275px;font-family: 宋体;"></button>
+						 <button id="nsan2" class="yellowButton2" type="button"style="top: 290px;left: 415px;font-family: 宋体;"></button>
+						 <button id="nsan3" class="yellowButton2" type="button"style="top: 290px;left: 555px;font-family: 宋体;"></button>
+						 <div id="neishi2">
+							<button id="nsan4" class="yellowButton2" type="button"style="top: 340px;left: 140px;font-family: 宋体;"></button>
+							<button id="nsan5" class="yellowButton2" type="button"style="top: 340px;left: 275px;font-family: 宋体;"></button>
+							<button id="nsan6" class="yellowButton2" type="button"style="top: 340px;left: 415px;font-family: 宋体;"></button>
+							<button id="nsan7" class="yellowButton2" type="button"style="top: 340px;left: 555px;font-family: 宋体;"></button>
+						 </div>
+					  <button id="neishiQx" class="ziButton" type="button" style="bottom: 50px;left: 360px;">取消</button>
+					</div>
+					<div id="椒房殿内" class="各地内部">
+					    <img id="椒房殿BG" alt=""> 
+						<div class="yilTittle"style="font-size: 32px;">椒房殿</div>
+					    <img id="cxhhtx" class="后宫头像" src="" style="position: absolute;top: 80px;left: 150px;">
+					    <button class="yellowButton2" id="san0" type="button"style="top: 140px;left: 625px;">用膳</button>
+					    <button class="yellowButton2" id="san1" type="button"style="top: 180px;left: 625px;">聊天</button>
+					    <button class="yellowButton2" id="san2" type="button"style="top: 220px;left: 625px;">宠幸</button>
+					    <button class="yellowButton2" id="san3" type="button"style="top: 260px;left: 625px;">家宴</button>
+					    <button class="yellowButton2" id="san4" type="button"style="top: 300px;left: 625px;">选秀</button>
+					    <button class="yellowButton2" id="san5" type="button"style="top: 340px;left: 625px;">协理六宫</button>
+					    <button class="yellowButton2" id="san6" type="button"style="top: 380px;left: 625px;">大封六宫</button>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 670px;">离开</button>
+					</div>
+					<div id="后宫内" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<button id="hgguanbi" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+						<div class="yilanbiao" id="hougongqian" style="top: 190px;left: 20px;width:50px; height:122px; background-position:-573px -389px;"></div>
+						<div class="yilanbiao" id="hougonghou" style="top: 190px;left: 730px;width:50px; height:122px; background-position:-627px -389px;"></div>
+						<span class="继续" id='hougongbt' style="top: 45px;left: 320px;position: absolute;font-size: 20px;color: #FFFFFF;font:20px;"></span>
+						<img class='选宫背景' style="top: 120px;left: 30px;">
+						<img class='选宫背景' style="top: 120px;left: 160px;">
+						<img class='选宫背景' style="top: 120px;left: 290px;">
+						<img class='选宫背景' style="top: 120px;left: 420px;">
+						<img class='选宫背景' style="top: 120px;left: 550px;">
+						<div class='xuangongmb' style="top: 80px;left: 77px;"><span class="宫殿名称"></span></div>
+						<div class='xuangongmb' style="top: 80px;left: 207px;"><span class="宫殿名称"></span></div>
+						<div class='xuangongmb' style="top: 80px;left: 337px;"><span class="宫殿名称"></span></div>
+						<div class='xuangongmb' style="top: 80px;left: 467px;"><span class="宫殿名称"></span></div>
+						<div class='xuangongmb' style="top: 80px;left: 597px;"><span class="宫殿名称"></span></div>
+						<button id="suibianfan" class="blueButton2" type="button" style="bottom: 15px;left: 70px;">随便翻一个</button>
+						<div id='各宫的面板' class="各地内部"><img src="" alt="" id='宫背景' style="position: absolute;left: 0px; top: 0px;"><img src="images/1634.webp" alt="" id='宫内板' style="position: absolute;left: 160px; top: 95px;">
+						<button type="button" class="各宫的小板" style="left: 360px;top: 125px;font-size: 18px;"></button>
+						<button type="button" class="各宫的小板" style="left: 250px;top: 215px;font-size: 18px;"></button>
+						<button type="button" class="各宫的小板" style="left: 470px;top: 215px;font-size: 18px;"></button>
+						<button type="button" class="各宫的小板" style="left: 250px;top: 300px;font-size: 18px;"></button>
+						<button type="button" class="各宫的小板" style="left: 470px;top: 300px;font-size: 18px;"></button>
+						<span class="住着谁" style="left: 300px;top: 171px;"></span>
+						<span class="住着谁" style="left: 188px;top: 255px;"></span>
+						<span class="住着谁" style="left: 408px;top: 255px;"></span>
+						<span class="住着谁" style="left: 188px;top: 340px;"></span>
+						<span class="住着谁" style="left: 408px;top: 340px;"></span>
+						<span class="状态" style="left: 300px;top: 189px;"></span>
+						<span class="状态" style="left: 188px;top: 280px;"></span>
+						<span class="状态" style="left: 408px;top: 280px;"></span>
+						<span class="状态" style="left: 188px;top: 362px;"></span>
+						<span class="状态" style="left: 408px;top: 362px;"></span>
+						 <span id="gongty"></span>
+						 <button type="button" class="blueButton2"id="ghgm" style="left: 340px;bottom: 55px;display:none;">换宫名</button>
+						 <button class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+						</div>
+						</div>
+					<div id="feiziyilan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="fzyilanban"></div>
+						<div class="yilanbiao" id="feiziyilanqian"></div>
+						<div class="yilanbiao" id="feiziyilanhou"></div>
+						<div class="textsong" style="top: 75px;left: 95px;position: absolute;">名字</div>
+						<div class="textsong" style="top: 75px;left: 200px;position: absolute;">家族</div>
+						<div id="fznl" class="textsong" style="top: 75px;left: 280px;position: absolute;">年龄</div>
+						<div id="fzmh" class="textsong" style="top: 75px;left: 360px;position: absolute;">名号</div>
+						<div class="textsong" style="top: 75px;left: 440px;position: absolute;">宫殿</div>
+						<div id="fzen" class="textsong" style="top: 75px;left: 500px;position: absolute;">儿女</div>
+						<div id="fzml" class="textsong" style="top: 75px;left: 540px;position: absolute;">魅力</div>
+						<div id="fzjy" class="textsong" style="top: 75px;left: 580px;position: absolute;">经验</div>
+						<div id="fza" class="textsong" style="top: 75px;left: 630px;position: absolute;">爱</div>
+						<div id="fzzt" class="textsong" style="top: 75px;left: 675px;position: absolute;">状态</div>
+						<div id="feizilbx" class="feizilbx">
+						<div  class="f1" style="left: 25px;width: 6em;"></div>
+						<div  class="f2" style="left: 45px;width: 5em;"></div>
+						<div  class="f3" style="left: 78px;"></div>
+						<div  class="f4" style="left: 108px;width: 5em;"></div>
+						<div  class="f5" style="left: 130px;width: 3em;"></div>
+						<div  class="f6" style="left: 155px;"></div>
+						<div  class="f7" style="left: 170px;"></div>
+						<div  class="f8" style="left: 183px;"></div>
+						<div  class="f9" style="left: 198px;width: 2em;"></div>
+						<div class="f10" style="left: 220px;width: 2em;"></div>
+						</div>
+						<div class="line"></div>
+						<div class="yilTittle">妃嫔列表</div>
+						<button type="button" class="ziButton " id="fpguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="zinvyilan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="znyilanban"></div>
+						<div class="yilanbiao" id="zinvyilanqian"></div>
+						<div class="yilanbiao" id="zinvyilanhou"></div>
+						<div class="textsong" style="top: 75px;left: 65px;position: absolute;">名字</div>
+						<div class="textsong" style="top: 75px;left: 115px;position: absolute;">年龄</div>
+						<div class="textsong" style="top: 75px;left: 185px;position: absolute;">排名</div>
+						<div class="textsong" style="top: 75px;left: 270px;position: absolute;">名号</div>
+						<div class="textsong" id="zn5" style="top: 75px;left: 320px;position: absolute;">统帅</div>
+						<div class="textsong" id="zn6" style="top: 75px;left: 360px;position: absolute;">武力</div>
+						<div class="textsong" id="zn7" style="top: 75px;left: 400px;position: absolute;">智力</div>
+						<div class="textsong" id="zn8" style="top: 75px;left: 440px;position: absolute;">政治</div>
+						<div class="textsong" id="zn9" style="top: 75px;left: 480px;position: absolute;">魅力</div>
+						<div class="textsong" style="top: 75px;left: 540px;position: absolute;">母亲</div>
+						<div class="textsong" style="top: 75px;left: 610px;position: absolute;">婚配</div>
+						<div class="textsong" style="top: 75px;left: 680px;position: absolute;">儿女</div>
+						<div id="zinvlbx" class="zinvlbx" style="top: 105px;left: 40px;width: 686px;height: 32px;position: absolute;overflow: hidden;">
+						<div  class="z1" style="left: 10px;width: 4em;"></div>
+						<div  class="z2" style="left: 15px;"></div>
+						<div  class="z3" style="left: 20px;width: 7em;"></div>
+						<div  class="z4" style="left: 25px;width: 4em;"></div>
+						<div  class="z5" style="left: 35px;"></div>
+						<div  class="z6" style="left: 50px;"></div>
+						<div  class="z7" style="left: 30px;width: 6em;"></div>
+						<div  class="z8" style="left: 16px;"></div>
+						<div  class="z9" style="left: 30px;"></div>
+						<div class="z10" style="left: 32px;width: 6em;"></div>
+						<div class="z11" style="left: 30px;width: 4em;"></div>
+						<div class="z12" style="left: 55px;"></div>
+						</div>
+						<div class="line"></div>
+						<div class="yilTittle">子女列表</div>
+						<button type="button" class="ziButton " id="fpguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="junshibiao" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="jsyilanban"></div>
+						<div class="yilanbiao" id="junshiqian"></div>
+						<div class="yilanbiao" id="junshihou"></div>
+						<div class="textsong" id="js1" style="top: 75px;left: 80px;position: absolute;"></div>
+						<div class="textsong" id="js2" style="top: 75px;left: 180px;position: absolute;"></div>
+						<div class="textsong" id="js3" style="top: 75px;left: 250px;position: absolute;">宫殿</div>
+						<div class="textsong" id="js4" style="top: 75px;left: 315px;position: absolute;"></div>
+						<div class="textsong" id="js5" style="top: 75px;left: 400px;position: absolute;"></div>
+						<div class="textsong" id="js6" style="top: 75px;left: 460px;position: absolute;width: 4em;"></div>
+						<div class="textsong" id="js7" style="top: 75px;left: 540px;position: absolute;"></div>
+						<div class="textsong" id="js8" style="top: 75px;left: 600px;position: absolute;"></div>
+						<div class="textsong" id="js9" style="top: 75px;left: 660px;position: absolute;"></div>
+						<div id="junshilbx" class="junshilbx">
+						<div  class="j1" style="left: 10px;width: 6em;"></div>
+						<div  class="j2" style="left: 20px;width: 6em;"></div>
+						<div  class="j3" style="left: 25px;width: 3em;"></div>
+						<div  class="j4" style="left: 35px;width: 5em;"></div>
+						<div  class="j5" style="left: 50px;width: 4em;"></div>
+						<div  class="j6" style="left: 55px;width: 4em;"></div>
+						<div  class="j7" style="left: 70px;width: 3em;"></div>
+						<div  class="j8" style="left: 83px;width: 3em;"></div>
+						<div  class="j9" style="left: 90px;width: 4em;"></div>
+						</div>
+						<div class="line"></div>
+						<div class="line" id="jssmline" style="top: 326px;"></div>
+						<span id="jssm" class="song"></span>
+						<div class="yilTittle" id="jsTittle"></div>
+						<button type="button" class="ziButton" id="junshiguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="waijiaoyilan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="wjyilanban"></div>
+						<div class="yilanbiao" id="waijiaoqian"></div>
+						<div class="yilanbiao" id="waijiaohou"></div>
+						<div  class="textsong" style="top: 75px;left: 78px;position: absolute;">国家</div>
+						<div class="textsong" style="top: 75px;left: 150px;position: absolute;">州府</div>
+						<div  class="textsong" style="top: 75px;left: 220px;position: absolute;">士兵</div>
+						<div class="textsong" style="top: 75px;left: 310px;position: absolute;">外交关系</div>
+						<div class="textsong" style="top: 75px;left: 420px;position: absolute;">贸易额</div>
+						<div class="textsong" style="top: 75px;left: 500px;position: absolute;">贸易年</div>
+						<div class="textsong" style="top: 75px;left: 610px;position: absolute;">保护期</div>
+						<div id="waijiaolbx" class="waijiaolbx" >
+						<div  class="w1" style="left: 30px;width: 3em;"></div>
+						<div  class="w2" style="left: 65px;"></div>
+						<div  class="w3" style="left: 105px;width: 3em;"></div>
+						<div  class="w4" style="left: 150px;width: 5em;"></div>
+						<div  class="w5" style="left: 200px;width: 4em;"></div>
+						<div  class="w6" style="left: 235px;"></div>
+						<div  class="w7" style="left: 270px;width: 4em;"></div>
+						<div  class="w8" style="left: 275px;width: 4em;"></div>
+						</div>
+						<div class="line"></div>
+						<div class="yilTittle">外交一览</div>
+						<button type="button" class="ziButton " id="waijiaoguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="waiguoxx" class="各地内部">
+					  <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <img id="wgxxbg" class="各地内部" >
+					  <img src="images/335.webp" style="top: 60px;left: 40px;position: absolute;" >
+					  <span id="waiguoText" class="songTitle" style="top:70px;left: 160px;"></span>
+					  <span id="wgxingxi" class="song" style="top:100px;left: 55px; width: 270px;height: 340px;"></span>
+					  <span id="zongshi" class="song" style="top:75px;left: 340px;width: 250px;height: 240px;"></span>
+					  <span id="guobao" class="song" style="top:325px;left: 340px;width: 250px;height: 100px;"></span>
+					  <button class="redButton2" id="wgan0" type="button"style="top: 70px;left: 635px;"></button>
+					  <button class="redButton2" id="wgan1" type="button"style="top: 110px;left: 635px;"></button>
+					  <button class="redButton2" id="wgan2" type="button"style="top: 150px;left: 635px;"></button>
+					  <button class="redButton2" id="wgan3" type="button"style="top: 190px;left: 635px;"></button>
+					  <button class="redButton2" id="wgan4" type="button"style="top: 230px;left: 635px;"></button>
+					  <button id="wgxxgb" class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="jiajuanyilan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="jjyilanban"></div>
+						<div class="yilanbiao" id="jiajuanqian"></div>
+						<div class="yilanbiao" id="jiajuanhou"></div>
+						<div id="jia1" class="textsong" style="top: 75px;left: 100px;position: absolute;">名字</div>
+						<div id="jia2" class="textsong" style="top: 75px;left: 240px;position: absolute;">家族</div>
+						<div id="jia3" class="textsong" style="top: 75px;left: 330px;position: absolute;">年龄</div>
+						<div id="jia4" class="textsong" style="top: 75px;left: 400px;position: absolute;">身份</div>
+						<div id="jia5" class="textsong" style="top: 75px;left: 465px;position: absolute;text-align: center;width: 4em;">儿女</div>
+						<div id="jia6" class="textsong" style="top: 75px;left: 560px;position: absolute;">魅力</div>
+						<div id="jia7" class="textsong" style="top: 75px;left: 640px;position: absolute;text-align: center;width: 4em;">状态</div>
+						<div id="jiajuanlbx" class="jiajuanlbx">
+						<div class="jj1" style="left: 38px;width: 5em;"></div>
+						<div class="jj2" style="left: 78px;width: 8em;"></div>
+						<div class="jj3" style="left: 85px;width: 3em;"></div>
+						<div class="jj4" style="left: 110px;width: 3em;"></div>
+						<div class="jj5" style="left: 133px;width: 5em;"></div>
+						<div class="jj6" style="left: 155px;width: 3em;"></div>
+						<div class="jj7" style="left: 195px;width: 4em;"></div>
+						</div>
+						<div class="line"></div>
+						<button type="button" class="redButton2 " id="qxzb" style=" bottom: 5px;left: 360px;border: none;display: none;">取消值班</button>
+						<div class='ziButtonText' id="jjText" style="color: #fafa36;width: 24px;top: 60px;left: 730px;position: absolute;">家眷一览</div>
+						<button type="button" class="ziButton " id="jiajuanguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="kaikekaoshi" class="各地内部">
+						<img id="kkksBG" >
+						<div class="yilanbiao" id="kjyilanban" style="left: 60px;"></div>
+						<div  class="textsong" style="top: 75px;left: 80px;position: absolute;font-family: '楷体';">选中</div>
+						<div class="textsong" style="top: 75px;left: 140px;position: absolute;font-family: '楷体';">名字</div>
+						<div  class="textsong" style="top: 75px;left: 230px;position: absolute;">年龄</div>
+						<div class="textsong" style="top: 75px;left: 320px;position: absolute;">智力</div>
+						<div class="textsong" style="top: 75px;left: 410px;position: absolute;">武力</div>
+						<div class="textsong" style="top: 75px;left: 500px;position: absolute;">统帅</div>
+						<div class="textsong" style="top: 75px;left: 590px;position: absolute;">政治</div>
+						<div class="textsong" style="top: 75px;left: 680px;position: absolute;">魅力</div>
+						<div id="kaoshilbx" class="kaoshilbx" style="top: 95px;left: 70px;width: 660px;height: 25px;position: absolute;">
+						<div id='xuanzhongquan' class="xIcon" style="position: relative;float: left;left: 12px;top: 7px;"></div>
+						<img src="images/459.webp" class='xuanzhongle' style="width:27px; height:25px; background-position:-574px -87px;cursor: pointer;position: relative;float: left;left: -8px;opacity: 0;top: 4px;">
+						<div  class="k1" style="left: -10px;width: 98px;font-family: '楷体';font-size: 16px;height: 16px;cursor: pointer;"></div>
+						<div  class="k2" style="left: 15px;k2"></div>
+						<div  class="k3" style="left: 80px;"></div>
+						<div  class="k4" style="left: 145px;"></div>
+						<div  class="k5" style="left: 210px;"></div>
+						<div  class="k6" style="left: 275px;"></div>
+						<div  class="k7" style="left: 340px;"></div>
+						</div>
+						<div class='ziButtonText' style="color: #fafa36;width: 24px;top: 60px;left: 750px;position: absolute;">金榜提名</div>
+						<button type="button" class="redButton2 " id="kaoshiguanbi" style=" bottom: 5px;left: 360px;border: none;">确定</button>
+					</div>
+					<div id="出现这位后宫" class="各地内部">
+						<img id='出现背景' src="">
+						<div id='出现后宫'>
+							<img id='后宫头像' class="后宫头像">
+						    <div class="cxhg"style="width:378px; height:165px; background-position:0px 0px;position: absolute;bottom: 0px;left: 220px;"></div>
+						    <div id="后宫对话框" class="cxhg" style=" display: none;"><span class="song" id="后宫对话2"></span></div>
+						    <div id="后宫对话板" class="cxhg" style="position: absolute;bottom: 0px;left: 238px;"><span class="song" id="后宫对话" style="top: 15px;left: 15px;text-shadow: -1px 1px 1px #000000,1px 1px 1px #000000;"></span></div>
+						    <button type="button" id ="出现后宫an1" class="redButton2" style="bottom: 150px;display: none;">册封名号</button>
+						    <button type="button" id ="出现后宫an2" class="redButton2" style="bottom: 100px;display: none;">收入储秀阁</button>
+						    <button type="button" id ="出现后宫an3" class="redButton2" style="bottom: 50px;display: none;">关闭</button>
+						    <button type="button" id ="出现后宫an0" class="redButton2" style="bottom: 10px;left: 340px;color: #FFFFFF;font:20px;font-family:'楷体';">确定</button>
+						</div>
+					</div>
+					<div id="qinglou" class="各地内部">
+						<img id="qinglouBG">
+						<img id='qltx0'>
+						<img id='qltx1'>
+						<div id="ql框" class="cxhg" style="display: none;"><span class="song" id="ql对话2"></span></div>
+						<div id="ql板" class="cxhg" style="position: absolute;bottom: 0px;left: 238px;"><span class="song" id="ql对话" style="top: 15px;left: 10px;"></span></div>
+						<button type="button" id ="qlan1" class="redButton2" style="bottom: 150px;display: none;"></button>
+						<button type="button" id ="qlan2" class="redButton2" style="bottom: 100px;display: none;"></button>
+						<button type="button" id ="qlan3" class="redButton2" style="bottom: 50px;display: none;"></button>
+						<button type="button" id ="qlan0" class="redButton2" style="bottom: 10px;left: 340px;color: #FFFFFF;font:20px;font-family:'楷体';">确定</button>
+					</div>
+					<div id="youyuan" class="各地内部">
+						<img id='yyBG' src="" style="position: absolute;top: 0px;left: 0px;">
+						<img id='yy头像' class="后宫头像" style="display: none;">
+						<div id="yykuang" class="cxhg"><span class="song" id="yyText"></span></div>
+						<div id="yyan" style="display: none;">
+							<button type="button" id ="yyan1" class="redButton2" style="bottom: 110px;"></button>
+							<button type="button" id ="yyan2" class="redButton2" style="bottom: 60px;"></button>
+						</div>
+					</div>
+					<div id="hdcx" class="各地内部">
+						<img src="images/529.webp" alt="" style="filter: brightness(20%);">
+						<img id='hdcxtu'>
+						<img id='hdcxtu2' src="images/33.webp" alt="">
+						<div id="cxkuang" class="cxhg"><span class="song" id="cxText"></span></div>
+					</div>
+					<div id="cf" style="position: absolute;width: 800px;height: 480px;top: 0px;left: 0px;overflow: hidden;display: none;">
+				     <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					 <div id="wfb" style="overflow-y: scroll;overflow-x: hidden;"><span class="dabiaoti" id="cfTittle"></span></div>
+					 <button id="册封取消" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					 <div id="jp" style="display: none;">
+					 	<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					 	<button id="jpqx" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					 </div>
+					 <div id="zdywf" style="display: none;">
+						 <button type="button" id="-wf" class="yellowButton2" style="bottom: 5px;left: 170px;">-</button>
+						 <button type="button" id="+wf"class="yellowButton2" style="bottom: 5px;left: 470px;">+</button>
+					 </div>
+					</div>
+					<div id="御赐封号" style="display: none;">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="xIcon" style="top: 160px;left: 300px;"></div>
+						<span class="dabiaoti" id="cfsm"></span>
+						<input type="text" id="输入封号" value="明德"/>
+						<button type="button" id= "随机封号" class="redButton2" style="top: 240px;left: 335px;">随机一个</button>
+						<button id="御赐封号确定" type="button" class="largeYellow" style="top: 340px;left: 295px;">确定</button>
+					</div>
+					<div id="bsjg" class="各地内部">
+					  <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <span id="jgsm" class="一级板"></span>
+					  <div id="bsjgb"></div>
+					</div>
+					<div id="tingzhan" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="tzyilanban"></div>
+						<div class="yilTittle">停战协议</div>
+						<div id="tztext0" class="song" style="top: 75px;left: 65px;width:550px;height:80px;"></div>
+						<div class="line"></div>
+						<div id="tztext1" class="song" style="top: 105px;left: 65px;width:550px;height:320px;"></div>
+					    <button id="tzan1" class="yellowButton2" type="button" style="bottom: 10px;right: 270px;font-family: 宋体;">不签</button>
+					    <button id="tzan0" class="redButton2" type="button" style="bottom: 10px;left: 270px;">签订</button>
+					</div>
+					<div id="hukoupucha" class="各地内部" style="background-color: rgba(0,0,0,0.4)">
+						<img id="hukouBG" src="" alt=""style="display: none;">
+						<img src="images/1624.webp" style="position: absolute;top: 90px;left: 230px;">
+						<span class="songTitle" id="huhouTitle" style="top: 100px;left: 245px;;width: 310px;height: 195px;"></span>
+						<span class="song" id="huhouText" style="top: 130px;left: 245px;;width: 310px;height: 195px;"></span>
+						<button id="hkan0" type="button" class="redButton2" style="top: 325px;left: 250px;">确定</button>
+						<button id="hkan1" type="button" class="yellowButton2" style="top: 325px;left: 420px;font-family: 宋体;">取消</button>
+					</div>
+					<div id="gzhjxz" class="各地内部" style="background-color: rgba(0,0,0,0.4)">
+						<img id="gzhjBG" style="display: none;">
+						<img src="images/1624.webp" style="position: absolute;top: 90px;left: 230px;">
+						<span class="songTitle" id="gzhjTittle" style="top: 100px;left: 245px;;width: 310px;height: 195px;"></span>
+						<span class="song" id="gzhjText" style="top: 130px;left: 245px;;width: 310px;height: 195px;"></span>
+						<button id="gzhjan0" type="button" class="redButton2" style="top: 325px;left: 190px;"></button>
+						<button id="gzhjan1" type="button" class="redButton2" style="top: 325px;left: 330px;"></button>
+						<button id="gzhjan2" type="button" class="yellowButton2" style="top: 325px;left: 470px;font-family: 宋体;">取消</button>
+					</div>
+					<div id="sy" class="各地内部">
+					    <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					    <div class="yilanbiao" id="syqian"></div>
+					    <div class="yilanbiao" id="syhou"></div>
+					    <div class='ziButtonText' id="syTitle" style="color: #fafa36;width: 24px;top: 45px;left: 750px;position: absolute;font-size: 30px;"></div>
+					    <button id="qxsy" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					    <span class="song" id="sysm" style="top: 70px;left: 80px;;width: 300px;color: #000000;"></span>
+					    <div id="syb" style="display: none;"></div>
+					    <div id="syb2" style="display: none;"></div>
+					</div>
+					<div id="tsjz" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+						<div class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div style="left: 330px;position:absolute;" class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div style="top: 133px;position:absolute;" class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div style="top: 133px;left: 330px;position:absolute;" class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div style="top: 266px;position:absolute;" class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div style="top: 266px;left: 330px;position:absolute;" class="jzdk">
+							<div class="jzk"></div>
+							<img class="jztu" style="top: 43px;left: 53px;position:absolute">
+							<img src="images/2167.webp" style="top: 43px;left: 50px;position:absolute">
+							<span class="jzsm" style=""></span>
+							<span class="jzmc" style="top: 140px;left: 80px;"></span>
+							<div class="jztiao" style="top: 140px;left: 175px;">
+								<div class="jztiao2"></div>
+							</div>
+							<span class="jzshux" style="top: 138px;left: 218px;">0%</span>
+							<button type="button" class="jzan" style="top: 130px;left: 280px;">修建</button>
+						</div>
+						<div class="yilTittle">特殊建筑</div>
+						<div class="yilanbiao" id="tsjzqian"></div>
+						<div class="yilanbiao" id="tsjzhou"></div>
+					</div>
+					<div id="xjdw" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					    <button id="xjdwgb" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					    <span id="zhixingren2" class="song">执行人</span>
+					    <button id="zxrbg2" class="yellowButton3" type="button" style="top: 80px;left:440px;">变更</button>
+					    <span id="dwqm" class="song" style="top: 170px;left:280px;color:black;width: 120px;height: 20px;">请给队伍起名：</span>
+					    <input type="text" id="dwming" class="titleSetText" maxlength="3" style="top: 168px;left: 430px;width: 50px;height: 17px;"/>
+					    <span id="xjdwtext" class="song" style="top: 230px;left: 150px;width: 400px;color: #000000;">请选择兵种。新建后到【调整兵力】中配置兵力。</span>
+					    <div id="xjdwb"></div>
+					</div>
+					<div id="zzcd" class="各地内部"><div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <button id="zzcdgb" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					  <span id="zzcdtext" class="song" style="top: 80px;left: 100px;width: 600px;color: #000000;"></span>
+					  <button id="zzqueding" type="button" class="redButton2" style="bottom: 50px;left: 350px;">确定</button>
+					  <div id="zzcdb"></div>
+					</div>
+					<div id="difangfazhan" class="各地内部"><div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <div id="dfTitle"></div>
+					  <div id="dfbgg"></div>
+					  <img id="dfbg">
+					  <div id="dfbg1" style=""></div>
+					  <div id="dfbz"></div>
+					  <div id="dftext0" class="song" style="width: 225px;left: 145px;top: 85px;height: 310px;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000;"></div>
+					  <div id="dftext1" class="song" style="width: 220px;left: 375px;top: 85px;height: 310px;text-shadow: 1px 1px 1px #000000,-1px 1px 1px #000000;"></div>
+					  <button class="yellowButton2" id="调整工资" type="button"style="top: 120px;left: 645px;font-family: lishu;">调整工资</button>
+					  <button class="yellowButton2" id="征缴粮食" type="button"style="top: 160px;left: 645px;font-family: lishu;">征缴粮食</button>
+					  <button class="yellowButton2" id="治安巡查" type="button"style="top: 200px;left: 645px;font-family: lishu;">治安巡查</button>
+					  <button class="redButton2" id="一键建设" type="button"style="top: 250px;left: 645px;font-family: lishu;">一键建设</button>
+					  <button class="redButton2" id="地方委任" type="button"style="top: 290px;left: 645px;font-family: lishu;">地方委任</button>
+					  <button class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					</div>
+					<div id="dfwr" class="各地内部">
+					    <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					    <span id="wrText" class="song" style="top: 60px;left:320px;color:black;width: 300px;height: 20px;"></span>
+					    <span id="wr0" class="song" style="left:200px;"></span>
+					    <span id="wr1" class="song" style="top: 168px;left:30px;"></span>
+					    <span id="wr2" class="song" style="top: 168px;left:400px;"></span>
+					    <span id="wr3" class="song" style="top: 248px;left:30px;"></span>
+					    <span id="wr4" class="song" style="top: 248px;left:400px;"></span>
+					    <span id="wr5" class="song" style="top: 328px;left:30px;"></span>
+					    <span id="wr6" class="song" style="top: 328px;left:400px;"></span>
+					    <button id="wrbg0" class="yellowButton3" type="button" style="top: 80px;left:440px;">变更</button>
+					    <button id="wrbg1" class="yellowButton3" type="button" style="top: 160px;left:260px;">变更</button>
+					    <button id="wrbg2" class="yellowButton3" type="button" style="top: 160px;left:620px;">变更</button>
+					    <button id="wrbg3" class="yellowButton3" type="button" style="top: 240px;left:260px;">变更</button>
+					    <button id="wrbg4" class="yellowButton3" type="button" style="top: 240px;left:620px;">变更</button>
+					    <button id="wrbg5" class="yellowButton3" type="button" style="top: 320px;left:260px;">变更</button>
+					    <button id="wrbg6" class="yellowButton3" type="button" style="top: 320px;left:620px;">变更</button>
+					    <button id="wrqueding" type="button" class="redButton2" style="bottom: 50px;left: 350px;">确定</button>
+					    <button id="qxwr" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					    <button id="wrjc" type="button" class="blueButton2" style="bottom: 55px;left: 340px;">解除委任</button>
+					</div>
+					<div id="数值拉动面板" class="各地内部"><div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <div class='ziButtonText' id="syTitle" style="color: #fafa36;width: 24px;top: 45px;left: 750px;position: absolute;font-size: 30px;"></div>
+					  <div id="rangebg" class="xIcon"></div>
+					  <div id="rangeqian" class="xIcon"></div>
+					  <div id="rangean" class="xIcon"></div>
+					  <input type="range" name="" id="range" oninput="change()" onchange="change()"  value=""/>
+					  <span id="zhixingren" class="song"></span>
+					  <button id="zxrbg" class="yellowButton3" type="button"style="top: 80px;left:440px;">变更</button>
+					  <span id="rangeText" class="song" style="top: 140px;left:150px;color:black;width: 500px;height: 160px;"></span>
+					  <span class="songTitle" id="rangezhi" style="bottom: 116px;left: 210px;width: 400px;height: 25px;"></span>
+					  <button id="rqueding" type="button" class="redButton2" style="bottom: 50px;left: 350px;">确定</button>
+					  <button id="qxsy" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					</div>
+					<div id="tujianxz" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<img class='选宫背景1' src="a0aPic_MingFei/Tu_3.webp" style="top: 120px;left: 30px;">
+						<img class='选宫背景1' src="a0aPic_NanChong/Tu_413.webp" style="top: 120px;left: 160px;">
+						<img class='选宫背景1' src="a0aPic_Wai/Tu_121.webp" style="top: 120px;left: 290px;">
+						<img class='选宫背景1' src="a0aPic_DiJiang/Tu_20.webp" style="top: 120px;left: 420px;">
+						<img class='选宫背景1' src="" style="top: 120px;left: 550px;">
+						<div class="yilTittle" style="font-size: 32px;top: 240px;left: 678px;">其他名人</div>
+						<div class="yilTittle" style="font-size: 32px;top: 240px;left: 160px;">后宫名人</div>
+						<div class='xuantj' style="top: 80px;left: 77px;background-position: -262px 0px;"></div>
+						<div class="yilTittle" style="font-size: 32px;top: 240px;left: 290px;">历史名人</div>
+						<div class="yilTittle" style="font-size: 32px;top: 240px;left: 418px;">外域美人</div>
+						<div class="yilTittle" style="font-size: 32px;top: 240px;left: 548px;">外域敌将</div>
+						<div class='xuantj' style="top: 80px;left: 207px;background-position: -262px 0px;"></div>
+						<div class='xuantj' style="top: 80px;left: 337px;background-position: -262px 0px;"></div>
+						<div class='xuantj' style="top: 80px;left: 467px;background-position: -262px 0px;"></div>
+						<div class='xuantj' style="top: 80px;left: 597px;background-position: -262px 0px;"></div>
+						<button id="tujgb" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					</div>
+					<div id="xfmb" class="各地内部">
+					  <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div id="xfb" style="top: 0px;left: 0px;position: absolute;"></div>
+						<span id="xfsm" class="一级板"></span>
+						<button id="xfgb" class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+						<button type="button" id="上一页" class="blueButton2" style="bottom: 45px;left: 240px;display: none;">上一页</button>
+						<button type="button" id="下一页" class="blueButton2" style="bottom: 45px;left: 420px;display: none;">下一页</button>
+			        </div>
+					<div id="yilanbiao" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class="yilanbiao" id="yilanban" style="top: 60px;left: 160px;width:569px; height:379px; background-position:0px -389px;"></div>
+						<div class="yilanbiao" id="yilanbiaoqian"></div>
+						<div class="yilanbiao" id="yilanbiaohou"></div>
+						<div id="名字" class="textsong" style="top: 75px;left: 210px;position: absolute;">名字</div>
+						<div id="官职" class="textsong" style="top: 75px;left: 300px;position: absolute;">官职</div>
+						<div id="gynl" class="textsong" style="top: 75px;left: 360px;position: absolute;">年龄</div>
+						<div id="gyts" class="textsong" style="top: 75px;left: 400px;position: absolute;">统帅</div>
+						<div id="gywl" class="textsong" style="top: 75px;left: 440px;position: absolute;">武力</div>
+						<div id="gyzl" class="textsong" style="top: 75px;left: 480px;position: absolute;">智力</div>
+						<div id="gyzz" class="textsong" style="top: 75px;left: 520px;position: absolute;">政治</div>
+						<div id="gyml" class="textsong" style="top: 75px;left: 560px;position: absolute;">魅力</div>
+						<div id="gypj" class="textsong" style="top: 75px;left: 600px;position: absolute;">品阶</div>
+						<div id="gyjw" class="textsong" style="top: 75px;left: 640px;position: absolute;">爵位</div>
+						<div id="gyzc" class="textsong" style="top: 75px;left: 680px;position: absolute;">忠诚</div>
+						<div id="liebiaoxiang" class="liebiaoxiang" style="top: 105px;left: 170px;width: 546px;height: 32px;position: absolute;overflow: hidden;">
+						<div class="l1" style="left: 5px;width: 98px;"></div>
+						<div  class="l2" style="left: 10px;width: 75px;"></div>
+						<div  class="l3" style="left: 20px;"></div>
+						<div  class="l4" style="left: 35px;"></div>
+						<div  class="l5" style="left: 50px;"></div>
+						<div  class="l6" style="left: 65px;"></div>
+						<div  class="l7" style="left: 80px;"></div>
+						<div  class="l8" style="left: 95px;"></div>
+						<div  class="l9" style="left: 108px;width: 30px;"></div>
+						<div class="l10" style="left: 121px;"></div>
+						<div  class="l11" style="left: 135px;"></div></div>
+						<div class="line" style="width:548px;left: 167px;"></div>
+						<img id="liebiaotx" src="">
+						<button type="button" class="redButton2 " id="citui" style=" bottom: 5px;left: 360px;border: none;display: none;">确定</button>
+						<div class="yilTittle">官员列表</div>
+						<button id="gygb" type="button" class="ziButton " id="ziseguanbi" style=" bottom: 10px;left: 660px;border: none;">离开</button>
+					</div>
+					<div id="fengjue" class="各地内部" style="background-color: rgba(0,0,0,0.4)">
+						<img src="images/1624.webp" style="position: absolute;top: 110px;left: 230px;">
+						<span class="song" id="fjText" style="top: 150px;left: 245px;;width: 310px;height: 195px;"></span>
+						<button type="button" class="fengjue" style="top: 293px;left: 570px;font: 20px 楷体;"></button>
+						<button type="button" class="fengjue" style="top: 260px;left: 570px;font: 20px 楷体;"></button>
+						<button type="button" class="fengjue" style="top: 227px;left: 570px;font: 20px 楷体;"></button>
+						<button type="button" class="fengjue" style="top: 194px;left: 570px;font: 20px 楷体;"></button>
+						<button type="button" class="fengjue" style="top: 161px;left: 570px;font: 20px 楷体;"></button>
+						<button type="button" class="fengjue" style="top: 128px;left: 570px;font: 20px 楷体;"></button>
+						<button id="fjan" type="button" class="yellowButton2" style="top: 345px;left: 380px;font-family: 宋体;"></button>
+					</div>
+					<div id="kecheng" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div class='yilTittle' id="kcTittle"></div>
+						<div id="kuang"></div><div id="kuang2"></div>
+						<div id="kc5">
+							<button class="kan" id="kan1" type="button"style="top: 140px;left: 10px;"></button>
+							<button class="kan" id="kan2" type="button"style="top: 180px;left: 10px;"></button>
+							<button class="kan" id="kan3" type="button"style="top: 220px;left: 10px;"></button>
+							<button class="kan" id="kan4" type="button"style="top: 260px;left: 10px;"></button>
+							<button class="kan" id="kan5" type="button"style="top: 300px;left: 10px;"></button>
+						</div>
+						<span class='song2' id="k1t"style="top: 45px;left: 280px;"></span>
+						<span class='song2' id="k2t" style="top: 45px;left: 530px;"></span>
+						<div class="yilanbiao" id="kcqian" style="left: 700px;"></div>
+						<div class="yilanbiao" id="kchou" style="left: 700px;"></div>
+						<button type="button" class="redButton2 " id="kcqd" style=" bottom: 5px;left: 360px;border: none;">确定</button>
+					    <button class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="介绍图" class="各地内部"><img src="images/529.webp" alt="" style="filter: brightness(20%);">
+					 <img src="images/1991.webp" alt="" style="position: absolute;top: 55px;left: 45px;">
+					 <img alt="" id="介绍图头像" style="position: absolute;top: 85px;left: 130px;">
+					 <span style="position: absolute;top: 405px;left: 132px;background-color: #000000;width: 246px;height: 28px;opacity: 0.3;"></span>
+					 <span id="介绍图名字" class="一级板" style="position: absolute;top: 408px;left: 132px; width: 246px;height: 28px;text-align: center;font-size: 19px;"></span>
+					 <span id="介绍图介绍" class="song" style="position: absolute;top: 75px;left: 392px; width: 285px;height: 325px;"></span>
+					 <button id="介绍图an3" type="button" class="redButton2" style="left: 540px;top: 410px;">关闭</button>
+					 <button id="介绍图an2" type="button" class="redButton2" style="left: 400px;top: 410px;">事宜</button>
+					 <button id="介绍图an1" type="button" class="redButton2" style="left: 540px;top: 368px;display: none;"></button>
+					 <button id="介绍图an0" type="button" class="redButton2" style="left: 400px;top: 368px;display: none;"></button>
+					</div>
+					<div id="fulu" class="各地内部">
+						<img id='fuluBG' src="" style="position: absolute;top: 0px;left: 0px;background-color: rgba(0,0,0,0.8)">
+						<div class="各地内部" style="display:block; background-color: rgba(0,0,0,0.8)"></div>
+						<img src="" id="fulutu" style="top:100px;left:280px;position: absolute;width:261px; height:186px;" >
+					    <div id="fulukuang" class="cxhg"><span class="song" id="fuluText"></span></div>
+					    <div id="fuluan">
+					    	<button type="button" id ="fuluan1" class="redButton2" style="bottom: 160px;">遣返家园</button>
+					    	<button type="button" id ="fuluan2" class="redButton2" style="bottom: 110px;">午门斩首</button>
+					    	<button type="button" id ="fuluan3" class="redButton2" style="bottom: 60px;">教化为民</button>
+					    </div>
+					</div>
+					<div id="wenhao2"></div>
+					<div id="szb" class="各地内部">
+					  <div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+					  <span id="szbText" style="overflow-x: hidden;overflow-y: scroll;"></span>
+					  <div id="szbTittle" class='ziButtonText' style="color: #fafa36;width: 28px;top: 60px;left: 730px;position: absolute;font-size: 30px">收支表</div>
+					  <button type="button" class="redButton2 " id="ksbs" style=" bottom: 5px;left: 360px;border: none;display: none;">开始</button>
+					  <button id="szbgb" class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="jdt" class="各地内部" style="background-color: rgba(0,0,0,0.6);">
+					  <div id="bsjdbg" class="xIcon"></div>
+					  <div id="bsjdqian" class="xIcon"></div>
+					  <span id="bssm" class="一级板"></span>
+					</div>
+					<div id="御赐" style="display: none;">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<span id="ycts"></span>
+						<span class="dabiaoti" id="ycsm"></span>
+						<div class="qmk" id="qmk1" style="top: 160px;left: 300px;"></div>
+						<input type="text" id="输入" value="" maxlength="3"/>
+						<button type="button" id= "随机一个" class="redButton2" style="top: 280px;left: 335px;">随机一个</button>
+						<button id="御赐确定" type="button" class="largeYellow" style="top: 340px;left: 295px;">确定</button>
+					</div>
+					<div id="jishi" class="各地内部">
+						<img src="images/529.webp" alt="">
+						<span id="jishitext" style="overflow-x: hidden;overflow-y: scroll;"></span>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 650px;">关闭</button>
+					</div>
+					<div id="出圣旨吧" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<div id="圣旨" style="position: absolute;left: 80px;top: 50px;">
+							<img src="images/1452.webp" >
+							<span style="writing-mode: tb-rl;position: absolute;top: 75px;left: 540px;font-family: 'lishu';font-size: 24px;">奉天承运皇帝诏曰</span>
+							<span style="writing-mode: tb-rl;position: absolute;top: 155px;left: 90px;font-family: 'xingkai';font-size: 19px;">钦此</span>
+							<span id="圣旨文本"></span>
+							<button type="button" class="xi" id="xi"></button>
+						</div>
+					</div>
+					<div id="属性栏" style="position: absolute;left: 0px;top: 0px;">
+						<div class="shuxinlan" style="width:801px; height:74px; background-position:0px -107px;top: -30px;"></div>
+						<div id="tiliT"></div>
+						<div id="season" class="shuxinlan"  style="position: absolute;top: 12px;left: 12px;width:56px; height:56px; background-position:0px -191px"></div>
+						<div class="shuxinlan" style="width:285px; height:93px; background-position:0px 0px;float: left;pointer-events: none;"></div>
+						<div class="shuxinlan" style="width:210px; height:35px; background-position:-400px 0px;left: 400px;"></div>
+						<span id="月份" class="属性" style="top: 60px;left: 25px;width: 2.3em;height:1.2em;text-align: center;"></span>
+						<span id="tili" class="属性" style="top: 3px;left: 80px;"></span>
+						<span id="年号和年" class="属性" style="top: 10px;left: 290px;"></span>
+						<span id="状态属性" class="属性" style="top: 10px;left: 380px;color: #007AFF;"></span>
+						<span id="金钱属性" class="属性" style="top: 10px;left: 470px;"></span>
+						<span id="粮食属性" class="属性" style="top: 10px;left: 610px;"></span>
+						<span id="具体属性" class="属性" style="top: 10px;left: 725px;">属性</span>
+						<div id="属性小人" class="shuxinlan" style="width:27px; height:30px; background-position:-264px -191px;top: 5px;left: 765px;"></div>
+					</div>
+					<div id="shuxingban" class="各地内部">
+						<div class="yilanbiao" style="top: 0px;left: 0px;"></div>
+						<span id="niandai" class="sxmc" style="top: 80px;left: 60px;width: 10em;font-size: 26px;height: 28px;"></span>
+						<span id="zhujuename" class="sxmc" style="top: 130px;left: 100px;width: 8em;"></span>
+						<span id="nianling" class="sxmc" style="width: 6em;top: 200px;left: 70px;text-align: left;"></span>
+						<span id="zhuangt" class="sxmc" style="width: 6em;top: 235px;left: 70px;text-align: left;"></span>
+						<span class="sxmc" style="top: 270px;left: 70px;">体力</span><div class="tiao" style="top: 276px;left: 130px;"><div id="tilitiao" class="tiao2"></div></div><span id="zhujuetili" class="shux" style="top: 274px;left: 168px;"></span>
+						<span class="sxmc" style="top: 305px;left: 70px;">国库</span><div class="tiao" style="top: 311px;left: 130px;"><div id="guokutiao" class="tiao2"></div></div><span id="guoku" class="shux" style="top: 309px;left: 137px;width: 7em;"></span>
+						<span class="sxmc" style="top: 340px;left: 70px;">存粮</span><div class="tiao" style="top: 346px;left: 130px;"><div id="cunliangtiao" class="tiao2"></div></div><span id="cunliang" class="shux" style="top: 344px;left: 137px;width: 7em;"></span>
+						<span class="sxmc" style="top: 375px;left: 70px;">威望</span><div class="tiao" style="top: 381px;left: 130px;"><div id="weiwangtiao" class="tiao2"></div></div><span id="weiwang" class="shux" style="top: 379px;left: 168px;"></span>
+						<span class="sxmc" style="top: 90px;left: 440px;">道德</span><div class="tiao" style="top: 96px;left: 500px;"><div id="daodetiao" class="tiao2"></div></div><span id="daode" class="shux" style="top: 94px;left: 538px;"></span>
+						<span class="sxmc" style="top: 125px;left: 440px;">暴戾</span><div class="tiao" style="top: 131px;left: 500px;"><div id="baolitiao" class="tiao2"></div></div><span id="baoli" class="shux" style="top: 129px;left: 538px;"></span>
+						<span class="sxmc" style="top: 160px;left: 440px;">快乐</span><div class="tiao" style="top: 166px;left: 500px;"><div id="kuailetiao" class="tiao2"></div></div><span id="kuaile" class="shux" style="top: 164px;left: 538px;"></span>
+						<span class="sxmc" style="top: 195px;left: 440px;">统帅</span><div class="tiao" style="top: 201px;left: 500px;"><div id="tongshtiao" class="tiao2"></div></div><span id="tongsh" class="shux" style="top: 199px;left: 538px;"></span>
+						<span class="sxmc" style="top: 230px;left: 440px;">武力</span><div class="tiao" style="top: 236px;left: 500px;"><div id="wulitiao" class="tiao2"></div></div><span id="wuli" class="shux" style="top: 234px;left: 538px;"></span>
+						<span class="sxmc" style="top: 265px;left: 440px;">智力</span><div class="tiao" style="top: 271px;left: 500px;"><div id="zhilitiao" class="tiao2"></div></div><span id="zhili" class="shux" style="top: 269px;left: 538px;"></span>
+						<span class="sxmc" style="top: 300px;left: 440px;">政治</span><div class="tiao" style="top: 306px;left: 500px;"><div id="zhengztiao" class="tiao2"></div></div><span id="zhengz" class="shux" style="top: 304px;left: 538px;"></span>
+						<span class="sxmc" style="top: 335px;left: 440px;">魅力</span><div class="tiao" style="top: 341px;left: 500px;"><div id="meilitiao" class="tiao2"></div></div><span id="meili" class="shux" style="top: 339px;left: 538px;"></span>
+						<span class="sxmc" style="top: 370px;left: 440px;">才艺</span><div class="tiao" style="top: 376px;left: 500px;"><div id="caiyitiao" class="tiao2"></div></div><span id="caiyi" class="shux" style="top: 374px;left: 538px;"></span>
+						<button class="ziButton" type="button" style="bottom: 10px;left: 660px;">关闭</button>
+					</div>
+					<div id="剧情对话" class="各地内部">
+						<img src="" id="剧情背景">
+						<img src="" id="剧情头像" class="后宫头像">
+						<div id="剧情对话板" style="position: absolute;top: 345px;left: 2px;cursor: pointer;background-image: url(images/839.webp);width: 798px;height: 135px;">
+							<span id="剧情文本" class="song"></span>
+						</div>
+						<div id="剧情按钮" style="display: none;">
+							<button id="剧情an0" class="xIcon1" style="top: 312px;left: 467px;background-position: 0px -41px; width:372px; height:39px;"></button>
+							<button id="剧情an1" class="xIcon1" style="top: 274px;left: 467px;background-position: 0px -41px; width:372px; height:39px;"></button>
+							<button id="剧情an2" class="xIcon1" style="top: 236px;left: 467px;background-position: 0px -41px; width:372px; height:39px;display: none;"></button>
+						    <button id="剧情an3" class="xIcon1" style="top: 198px;left: 467px;background-position: 0px -41px; width:372px; height:39px;display: none;"></button>
+						</div>
+						<div id="小箭头" class="xIcon" style="width:25px; height:14px; background-position:-733px -87px;left: 757px;"></div>
+					    <div id="倒计时" style="display: none;font-size: 30px;top: 200px;left: 380px;position: absolute;color: white;"></div>
+					</div>
+					<div id="heimubu" class="各地内部">
+					</div>
+					<div id="shengbing" class="各地内部"style="background-color: black;">
+						<span id="yundaole">皇上晕倒了！</span>
+					</div>
+					<div id="txmubu" class="后宫头像"></div>
+					<div id="cddd" class="各地内部">
+						<span class="song" style="position: absolute;bottom: 30px;left: 150px; width: 200px;height: 20px;"></span>
+					</div>
+				<div id="mu"><audio src="music/Music_16.mp3" id="mu1"></audio></div>
+				<div id="gameEnter">
+					<button class="blackInked" id='newGame' type="button" style=" position: absolute;bottom: 220px;left: 160px;">新游戏</button>
+					<button class="blackInked" id='continueGame' type="button" style=" position: absolute;bottom: 170px;left: 160px;">继续游戏</button>
+					<button class="blackInked" id='gengxingsm' type="button" style=" position: absolute;bottom: 120px;left: 160px;">更新说明</button>
+					<div><img src="images/42.webp" class="quan" style="top: 105px;left: 30px;">
+						<div class="junchenglu"style="top: 45px;left: 15px;">江社</div>
+						<div class="junchenglu" style="top: 115px;left: 40px;">山稷</div>
+					</div>
+				</div>
+				<div id="title">
+					<div id="setMainCharacter">
+						<div id="creditsDes" style="top: 60px;left: 350px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入姓氏和名字<br>(姓氏不超过6个字，名字不超过两个字)</div>
+						<div id="creditsDes2" style="top: 200px;left: 400px;width: 220px;">请输入年号(不超过两个字)</div>
+						<img src="images/1816.webp" style=" position: absolute; top: 130px;left : 350px;">
+						<input type="text" id="huangdixing" class="titleSetText" maxlength="6" value="李" style="top: 135px;left: 380px;width: 96px;"/>
+						<input type="text" id="huangdiming" value="玄启" class="titleSetText" maxlength="2" style="top: 135px;left: 575px;width: 32px;"/>
+						<input type="text" id="huangdinianhao" value="元鼎" class="titleSetText" maxlength="2" style="bottom: 185px;left: 500px;width: 100px;width: 32px;"/>
+						<button class="largeYellow" id="seHuangdiOver" style=" position: absolute;bottom: 70px;left: 540px;">下一步</button>
+					</div>
+					<img src="./a0aPic_HuangDi/Tu_0.webp"id="chushitx" style=" top: 60px;left: 40px;position: absolute;">	
+					<button class="largeYellow" id="changeTx" type="button" style=" position: absolute;bottom: 70px;left: 300px;">换个头像</button>
+					<div id="setHuanghou" style=" display: none;">
+						<div id="creditsDes" style="top: 60px;left: 380px;">&nbsp;&nbsp;&nbsp;&nbsp;请输入皇后的家族姓氏和名字<br>(姓氏不超过6个字，名字不超过两个字)</div>
+						<img src="images/1823.webp" style=" position: absolute; top : 140px;left : 460px;">
+						<input type="text" id="huanghouxing" value="朱" class="titleSetText"  maxlength="6" style="bottom: 290px;left: 490px;width: 96px;"/>
+						<input type="text" id="huanghouming" value="宜修" class="titleSetText"  maxlength="2" style="bottom: 215px;left: 522px;width: 32px;"/>
+						<button class="largeYellow" id="seHuanghouOver" type="button" style=" position: absolute;bottom: 70px;left: 540px;">下一步
+						</button>
+					</div>
+				</div>
+				<div id="xiaots" class="xIcon1" style="left: 160px;top: 80px;display: none;overflow: hidden;">
+					<span id="小提示" style=""></span>
+					<div class="xIcon" id="xtst" style="left: -300px;top: 0px;width:68px; height:40px; background-position:0px -87px;position: relative;"></div>
+				</div>
+				<div id="dengdaihmb" class="各地内部">
+					<img src="images/42.webp" class="quan">
+					<div class="junchenglu">江社</div>
+					<div class="junchenglu" style="top: 275px;left: 650px;">山稷</div>
+				</div>
+				<div id="shaodiao" style="display: none;">
+					<div id="zhezhao"></div>
+					<div id="huoyan"></div>
+				</div>
+				<div id="logo">
+					<img src="images/56.webp" id="rien">
+				</div>
+		    </div>
+		</div>
+		<script src="js/new_file1.js"></script>
+		<script src="js/new_file5.js"></script>
+		<script src="js/qcgn.js"></script>
+		<script src="js/qc_zhanz.js"></script>
+		<script src="js/hggn.js"></script>
+		<script src="js/znxg.js"></script>
+		<script src="js/qitagn.js"></script>
+		<script src="js/qitagn2.js"></script>
+		<script src="js/qitagn3.js"></script>
+		<script src="js/qitagn4.js"></script>
+		<script src="js/cxhg.js"></script>
+		<script src="js/suijijq.js"></script>
+		<script src="js/juqing1.js"></script>
+		<script src="js/juqing2.js"></script>
+		<script src="js/juqing3.js"></script>
+		<script src="js/juqing4.js"></script>
+		<script src="js/juqing5.js"></script>
+		<script src="js/zygn.js"></script>
+		<script src="js/storage.js"></script>
+		<script>
+			(function() {
+				var gameWidth = 800;
+				var gameHeight = 480;
+				var game = document.getElementById('game');
+				
+				function resizeGame() {
+					var windowWidth = window.innerWidth;
+					var windowHeight = window.innerHeight;
+					var scaleX = windowWidth / gameWidth;
+					var scaleY = windowHeight / gameHeight;
+					var scale = Math.min(scaleX, scaleY);
+					game.style.transform = 'scale(' + scale + ')';
+				}
+				
+				window.addEventListener('resize', resizeGame);
+				window.addEventListener('load', resizeGame);
+				resizeGame();
+			})();
+		</script>
+	</body>
+</html>
